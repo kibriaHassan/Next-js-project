@@ -18,7 +18,7 @@ const TopNavbar = () => {
     <nav className="flex items-center justify-between bg-black border border-slate-700 px-6 py-4 mx-4 rounded-full text-white text-sm relative">
       
       {/* Logo */}
-      <Link href="https://prebuiltui.com">
+      <Link href="#">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
           <circle cx="4.706" cy="16" r="4.706" fill="#D9D9D9" />
           <circle cx="16.001" cy="4.706" r="4.706" fill="#D9D9D9" />
