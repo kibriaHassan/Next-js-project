@@ -81,7 +81,6 @@ yarn add your-package-name`}
           </div>
         </section>
 
-        {/* API Reference */}
         <section ref={apiRef} className="scroll-mt-20">
           <div className="bg-[#111] border border-gray-800 rounded-2xl p-8 shadow-lg">
             <h2 className="text-2xl font-semibold mb-4">📚 API Reference</h2>
