@@ -15,7 +15,7 @@ const TopNavbar = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between border border-slate-700 px-6 py-4 mx-4 rounded-full text-white text-sm relative">
+    <nav className="flex items-center justify-between bg-black border border-slate-700 px-6 py-4 mx-4 rounded-full text-white text-sm relative">
       
       {/* Logo */}
       <Link href="https://prebuiltui.com">
@@ -35,10 +35,7 @@ const TopNavbar = () => {
             href={item.path}
             className="relative overflow-hidden h-6 group"
           >
-            <span className="block group-hover:-translate-y-full transition-transform duration-300">
-              {item.name}
-            </span>
-            <span className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300">
+            <span className="block transition-transform duration-300">
               {item.name}
             </span>
           </Link>
@@ -47,12 +44,11 @@ const TopNavbar = () => {
 
       {/* Desktop Buttons */}
       <div className="hidden md:flex items-center gap-4 ml-14">
-        <button className="border border-slate-600 hover:bg-slate-800 px-4 py-2 rounded-full text-sm font-medium transition">
+        <button className="border border-slate-600 px-4 py-2 rounded-full text-sm font-medium transition">
           Contact
         </button>
         <button className="bg-white text-black px-4 py-2 rounded-full text-sm font-medium 
-                           shadow-[0px_0px_30px_7px] hover:shadow-[0px_0px_30px_14px] 
-                           shadow-white/50 hover:shadow-white/50 hover:bg-slate-100 transition duration-300">
+                           shadow-[0px_0px_30px_7px] shadow-white/50 transition duration-300">
           Get Started
         </button>
       </div>
@@ -60,7 +56,7 @@ const TopNavbar = () => {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setOpen(!open)}
-        className="md:hidden text-gray-300"
+        className="md:hidden text-white"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2"
              viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
@@ -78,19 +74,18 @@ const TopNavbar = () => {
           <Link
             key={item.name}
             href={item.path}
-            className="hover:text-indigo-600"
+            className="text-white"
           >
             {item.name}
           </Link>
         ))}
         
-        <button className="border border-slate-600 hover:bg-slate-800 px-4 py-2 rounded-full text-sm font-medium transition">
+        <button className="border border-slate-600 px-4 py-2 rounded-full text-sm font-medium transition text-white">
           Contact
         </button>
 
         <button className="bg-white text-black px-4 py-2 rounded-full text-sm font-medium 
-                           shadow-[0px_0px_30px_7px] hover:shadow-[0px_0px_30px_14px] 
-                           shadow-white/50 hover:shadow-white/50 hover:bg-slate-100 transition duration-300">
+                           shadow-[0px_0px_30px_7px] shadow-white/50 transition duration-300">
           Get Started
         </button>
       </div>
