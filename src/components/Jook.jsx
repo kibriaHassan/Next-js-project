@@ -11,8 +11,6 @@ const Jook = () => {
             Get Started
           </button>
     </nav>
-   
-    
     </>
   )
 }
